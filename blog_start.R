@@ -46,6 +46,7 @@ file.edit(".gitignore")
 .Ruserdata
 .DS_Store
 Thumbs.db
+blog_start.R
 
 blogdown::config_netlify()
 baseurl = "https://kenkoonwong.netlify.com"
