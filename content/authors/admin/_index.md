@@ -1,14 +1,14 @@
 ---
-bio: Life long learner
+bio: 
 email: ""
 highlight_name: true
 interests:
 - Infectious disease
 - Data Science
-- Botany
+- Lazy Gardening
 - Music
 - Tai chi
-role: Physician
+role: Life-long learner
 social:
 - icon: envelope
   icon_pack: fas
@@ -18,7 +18,7 @@ social:
   link: https://twitter.com/
 - icon: graduation-cap
   icon_pack: fas
-  link: https://scholar.google.com/
+  link: https://scholar.google.com/citations?user=0vSQIZgAAAAJ&hl=en
 - icon: github
   icon_pack: fab
   link: https://github.com/kenkoonwong/

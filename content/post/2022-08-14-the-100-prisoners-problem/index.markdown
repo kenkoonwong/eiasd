@@ -145,21 +145,42 @@ Wow, there is so much to unpack here. Let's break it down
           
 If still unclear, look through the video for the strategy, then re-read or even better run the code to get an understanding !
 
-Essentially, the code above will take roughly about to run, you should then save it for your reference
+Essentially, the code above will take *some time* about to run, you should then save it for your reference
 
 <br>
 
 ## 3. Let's take a look at the `df` dataframe
 
+
 ```r
-# load(file = "content/post/2022-08-14-the-100-prisoners-problem/df_prisoner_prob.Rda")
 load(file = "df_prisoner_prob.Rda")
+
+# calculating median and 95% Confidence interval
+med <- paste0("median:", 
+              df$prob %>% median(), 
+              " [95%CI ", 
+              df$prob %>% quantile(0.025),
+              "-",
+              df$prob %>% quantile(0.0975),"]")
+
+# plotting it
 df %>%
   ggplot(aes(x=prob)) +
-  geom_histogram() +
-  theme_bw()
+  geom_histogram(alpha = 0.5) +
+  theme_bw() +
+  ggtitle(paste0("Histogram of probability of winning the prisoner game (trial of ",total_n,")")) +
+  annotate(
+    "text", label = med,
+    x = 0.3, y = 5, size = 5, colour = "black"
+  )
 ```
 
 <img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-3-1.png" width="672" />
 
-ok test
+Pretty cool, eh!
+
+## **Conclusion/Lessons learnt**:
+If you can't formulate, simulate! :D
+Thanks to my brother, Ken S'ng Wong for introducing me to Veritasium video of this topic. Interesting problem to simulate. I'm sure there is a simpler code to simulate it, but I have to make it complicated. lol
+
+<br>
