@@ -73,7 +73,7 @@ features:
   avatar:
     gravatar: false
     shape: circle
-  comment:
+  comments:
     provider: 'utterances'
     commentable:
      posts: true
