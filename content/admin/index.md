@@ -4,4 +4,5 @@ outputs:
 - HTML
 private: true
 type: wowchemycms
+show_comments: true
 ---
