@@ -3,8 +3,14 @@ title: The 100 Prisoners Problem
 author: Ken Koon Wong
 date: '2022-08-14'
 slug: the-100-prisoners-problem
-categories: []
-tags: []
+categories: 
+- R
+- puzzle
+- simulation
+tags: 
+- R
+- puzzle
+- simulation
 subtitle: ''
 summary: ''
 authors: []
