@@ -71,9 +71,4 @@ security:
   _merge: deep
 sitemap:
   _merge: deep
-utterances:
-  issue_term: pathname
-  label: 'comments'
-  repo_name: kenkoonwong/eiasd
-  theme: boxy-light
-  use_utterances: yes
+

@@ -74,7 +74,9 @@ features:
     gravatar: false
     shape: circle
   comment:
-    provider: ''
+    provider: 'utterances'
+    commentable:
+     posts: true
     disqus:
       shortname: ''
       show_count: true

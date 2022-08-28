@@ -6,5 +6,5 @@ cascade:
     list: always
     render: never
 cms_exclude: true
-show_comments: true
+
 ---
